@@ -1,0 +1,20 @@
+accessLogging: false
+debug: true
+debugLogging: true
+#devices:
+#  master:
+#    cmdTimeout: 10
+#    exe: minidsp
+#    ignoreRetcode: false
+#    type: minidsp
+devices:
+  master:
+    channels:
+    - sub1
+    ip: 192.168.50.197
+    type: htp1
+    autoclear: true
+
+host: fattyserver.local
+iconPath: /root
+port: 8080

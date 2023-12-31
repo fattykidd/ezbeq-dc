@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ezbeq:
+    image: ghcr.io/fattykidd/ezbeq-dc:main
+    network_mode: host
+    volumes:
+      - /docker_data/ezbeq/config:/config
+    ports:
+      - 8080:8080
+    restart: unless-stopped
